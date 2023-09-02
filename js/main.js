@@ -21,7 +21,7 @@ const apiData = async(id=1000) =>{
         div.classList =`mx-auto`;
         div.innerHTML=`<figure class="">
 
-            <img class=mx-auto src="./icon.png" alt="Shoes" class="rounded-xl" />
+            <img class=mx-auto src="img/Icon.png" alt="Shoes" class="rounded-xl" />
 
         </figure>
         <div class="card-body items-center text-center text-4xl font-bold">
