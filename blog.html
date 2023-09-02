@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- tailwind cdn -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="texcss" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- fontcdn -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;60display=swap"rel="stylesheet">
+      <!-- font-awsomecdn  -->
+      <script src="https://kit.fontawesome.com/b56c5605b1.js" crossorigin="anonymous"></script>
+    <title>Blog Post</title>
+</head>
+<body>
+    <header class="my-10">
+        <h1 class="text-center text-3xl font-bold my-10 font-mono">Question 1: Discuss the scope of var, let, and const</h1>
+        <p  class="mx-28 p-5 mt-5 rounded-lg text-lg bg-teal-400 font-normal">
+            In JavaScript, var, let, and const are used to declare variables, each with its own scope and behavior. <br>
+
+           <span class=" text-xl font-bold">var:</span> <br>
+            
+            Variables declared with var are function-scoped, meaning they are accessible throughout the entire function in which they are defined. <br>
+            They are hoisted to the top of their function or global scope, allowing them to be used before declaration with an initial value of undefined. <br>
+            var variables can be reassigned multiple times within their scope. <br>
+           <span class=" text-xl font-bold">let:</span> <br>
+            
+            Variables declared with let are block-scoped, meaning they are confined to the block (enclosed within curly braces) in which they are defined. They are not accessible outside that block. <br>
+            They are hoisted but not initialized, resulting in a ReferenceError if used before declaration. <br>
+            let variables can be reassigned within their block scope. <br>
+            <span class=" text-xl font-bold">const:</span> <br>
+            
+            Like let, variables declared with const are block-scoped. <br>
+            They are hoisted but not initialized, leading to a ReferenceError if used before declaration. <br>
+            const variables are constant and cannot be reassigned after initialization, making them suitable for declaring constants or values that should not change. <br>
+            In summary, var has function scope, let and const have block scope, and const additionally enforces immutability after declaration. It is generally recommended to use let and const for better scoping and predictability, while var is considered outdated in modern JavaScript due to its potential for hoisting-related bugs.
+            
+            
+            
+            
+            
+            </p>
+        <h1 class="text-center text-3xl font-bold my-10 font-mono">Question 2: Tell us the use cases of null and undefined</h1>
+        <P class="mx-28 p-5 mt-5 rounded-lg text-lg bg-teal-400 font-normal">
+
+            'null' and 'undefined' are two distinct values in JavaScript used to represent missing or non-existent values, but they have slightly different use cases: <br>
+
+            <span class=" text-xl font-bold">'undefined':</span> <br>
+
+Typically indicates that a variable has been declared but has not been assigned a value. <br> It also serves as the default value for function parameters that are not provided. <br>
+Often arises when trying to access object properties that do not exist. <br>
+Can be used explicitly to clear the value of a variable or object property. <br>
+Indicates a lack of a return value for a function that does not explicitly return anything. <br>
+It can cause unexpected behavior in code if not handled properly. <br>
+<span class=" text-xl font-bold">'null':</span> <br>
+
+Represents an intentional absence of any object value or no value at all. <br>
+It is often used to signify that a variable or object property has no meaningful value or is explicitly empty. <br>
+Can be used as a placeholder for an object property that will later hold an object reference. <br>
+Provides a clear and intentional way to represent the absence of an object, whereas undefined is more likely to indicate a mistake or unintentional absence. <br>
+In summary, undefined is often unintentional and indicates the absence of assignment, while null is a deliberate choice to represent a lack of value or emptiness in a variable or object property. Properly handling these values is essential to avoid bugs and ensure predictable behavior in your JavaScript code. <br>
+
+        </P>
+        <h1 class="text-center text-3xl font-bold my-10 font-mono">Question 3: What do you mean by REST API?</h1>
+        <P class="mx-28 p-5 mt-5 rounded-lg text-lg bg-teal-400 font-normal">A REST API (Representational State Transfer Application Programming Interface) is a web-based architecture for communication between different software systems. It uses standard HTTP methods (such as GET, POST, PUT, DELETE) to allow clients to interact with and manipulate resources (data) on a server, typically using a stateless, client-server approach.</P>
+    </header>
+    <div class="container mx-auto text-center my-10"><button class="btn text-center text-white font-bold rounded-md px-6 py-2 bg-[#FF1F3D] mt-5 mx-auto" onclick="gohome()">Go Home</button></div>
+        <script src="js/main.js"></script>
+</body>
+</html>

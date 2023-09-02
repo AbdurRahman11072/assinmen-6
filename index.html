@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="texcss" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontcdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;60display=swap"rel="stylesheet">
+    <!-- font-awsomecdn  -->
+    <script src="https://kit.fontawesome.com/b56c5605b1.js" crossorigin="anonymous"></script>
+    <title>86-PHero-tube</title>
+</head>
+<body class="container mx-auto" style="font-family: 'Inter', sans-serif;">
+    <header class="flex justify-center flex-wrap gap-4 px-2 sm:gap-20 md:gap-28 md:px-20 lg:gap-52 lg:px-28 xl:gap-80" ><img class="h-10 mt-4" src="Logo.png" alt="" srcset="">
+        <button class="btn text-center text-white font-bold rounded-md px-6 py-2 bg-[#FF1F3D] mt-5 " id="sort-by-view" onclick="sort()">SORT</button>
+        <button class="btn text-center text-white font-bold rounded-md px-6 py-2 bg-[#FF1F3D] mt-5" onclick="blog()">Blog</button>
+    </header>
+
+
+    <main class="container mx-auto mt-10" >
+        <div class="hidden"><span class="loading loading-spinner loading-lg"></span></div>
+        <div id="category" class="flex flex-wrap mx-2 gap-5 mb-10 justify-center">
+            
+                <!-- <p class="text-center text-white font-bold rounded-md px-6 py-2 bg-[#FF1F3D]">All</p> -->
+          <!-- <img class="w-6 h-6" src="icons8-verified-48.png" alt="" srcset=""> -->
+            
+        </div>
+        <!--post container -->
+        <div id="error"></div>
+        <div class="grid grid-cols-1 mx-3 gap-7 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4" id="video-container">
+
+            <!-- posts -->
+         
+      
+            
+
+              <!-- post end  -->
+        </div>
+        
+    </main>
+
+
+    <!-- script-file -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/sort.js"></script> -->
+
+
+</body>
+</html>
